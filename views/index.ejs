@@ -2,9 +2,29 @@
 <html>
   <head>
     <title><%= title %></title>
+    <link rel ="stylesheet" href="/stylesheets/style.css"/>
   </head>
   <body>
+    <a href="/math/add">calculator</a>
+    <a href="/math/add">Add</a>
+    <a href="/math/divide">Divide</a>
+    <a href="/math/multiply">Multiply</a>
+    <a href="/math/subtract">Subtract</a>
+
     <h1><%= title %></h1>
+
+    <p>Welcome to the calculator application</p>
+    <input type="number" name="num1"/>
+    <input type="number" name="num2"/>
+
+    <button type ="submit">Activate</button>
+
+    <%if (result) { %>
+        <%= num1 %> <%= symbol %> <%= num2 %> = <%= result %>
+    <% } %>
+    <br>
+    <br>
+    <br>
     <ul>
       <li>Coffee</li>
       <li>Tea</li>
